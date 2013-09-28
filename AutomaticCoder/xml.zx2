@@ -1,0 +1,40 @@
+//
+//  
+//  AutomaticCoder
+//
+//  Created by lxzhh  
+//  Copyright (c) 2012年 chopsticks. All rights reserved.
+//
+#import "#name#.h"
+
+@implementation #name#
+#synthesize#
+
+
+-(id)initWithString:(NSString*)responseString{
+self = [super initWithString:responseString];
+    
+    if( self )
+    {
+        NSError *error = nil;
+        GDataXMLDocument *doc = [[GDataXMLDocument alloc] initWithXMLString:responseString options:0 error:&error];
+        if(doc)
+        {
+        #parseXML#
+        }
+    [doc release];
+        
+    }
+    return self;
+
+}
+
+
+
+-(void)dealloc{
+    #dealloc#
+    [super dealloc];
+}
+
+
+@end

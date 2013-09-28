@@ -1,0 +1,19 @@
+//
+//  
+//  AutomaticCoder
+//
+//  Created by lxzhh   
+//  Copyright (c) 2012年 chopsticks. All rights reserved.
+//
+
+
+#import <Foundation/Foundation.h>
+#import "#superClass#.h"
+
+@interface #name# : #superClass#
+
+#property# 
+
+
+
+@end

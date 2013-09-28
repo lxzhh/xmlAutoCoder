@@ -1,0 +1,33 @@
+//
+//  
+//  AutomaticCoder
+//
+//  Created by lxzhh  
+//  Copyright (c) 2012年 chopsticks. All rights reserved.
+//
+#import "#name#.h"
+
+@implementation #name#
+#synthesize#
+
+
+-(id)initWithXMLElement:(GDataXMLElement*)enode{
+self = [super init];
+    
+    if( self )
+    {
+         #parseXML#
+        
+    }
+    return self;
+
+}
+
+
+-(void)dealloc{
+    #dealloc#
+    [super dealloc];
+}
+
+
+@end

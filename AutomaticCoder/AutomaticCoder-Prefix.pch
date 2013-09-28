@@ -1,0 +1,19 @@
+//
+// Prefix header for all source files of the 'AutomaticCoder' target in the 'AutomaticCoder' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+
+typedef enum
+{
+    kString = 0,
+    kNumber = 1,
+    kBool   = 2,
+    kChildrenArray  = 3,//items，子节点为一个个item
+    kData   = 4,
+    kNode   = 5,
+    kAttribute = 6,
+    kSelfArray = 7//本身为item，有N个
+}parseValueType;
+#endif
